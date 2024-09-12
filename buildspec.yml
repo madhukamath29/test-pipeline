@@ -11,14 +11,13 @@ phases:
     commands:
       - echo Cloning repositories...
       - git clone https://github.com/madhukamath29/enterprise_repo.git 
-      - git clone https://github.com/madhukamath29/demo-odoo17.git 
-
+      - git clone https://github.com/madhukamath29/test-pipeline.git
   build:
     commands:
       - echo Merging code from both repositories...
       - mkdir merged_code
       - cp -r enterprise_repo/* merged_code/
-      - cp -r demo-odoo17/* merged_code/
+      - cp -r test-pipeline/* merged_code/
       - echo Merged code successfully.
 
   post_build:
