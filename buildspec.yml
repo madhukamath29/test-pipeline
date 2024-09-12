@@ -21,7 +21,7 @@ phases:
       - ls -l merged_code/
       - cp -r /home/test-pipeline/* merged_code/
       - ls -l merged_code/
-      - echo Merged code successfully...
+      - echo Merged code successfully....
 
   post_build:
     commands:
@@ -30,7 +30,7 @@ phases:
       - cp -r merged_code/* temp/test/
       - ls -l temp
       - ls -l temp/test/
-      - echo Artifacts ready..........
+      - echo Artifacts ready............
 
 artifacts:
   files:
