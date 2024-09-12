@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: s3://scenery-bucket/s3_ok
+  - source: s3://scenery-bucket/s3_ok/
     destination: /opt/demo  # Use absolute path
 
 hooks:
