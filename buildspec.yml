@@ -34,4 +34,4 @@ phases:
 
 artifacts:
   files:
-    - 'temp/test/**/*'
+    - 'temp1/test/**/*'
