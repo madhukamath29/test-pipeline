@@ -10,8 +10,9 @@ phases:
   pre_build:
     commands:
       - echo Cloning repositories...
-      - git clone https://github.com/madhukamath29/enterprise_repo.git 
+      - git clone https://github.com/madhukamath29/enterprise_repo.git
       - git clone https://github.com/madhukamath29/test-pipeline.git
+
   build:
     commands:
       - echo Merging code from both repositories...
@@ -23,13 +24,13 @@ phases:
   post_build:
     commands:
       - echo Preparing artifacts for deployment...
-      - mkdir -p temp/test   # Use relative path here
-      - cp -r merged_code/* temp/test/  # Use relative path here
+      - mkdir -p temp/test
+      - cp -r merged_code/* temp/test/
       - ls -l temp
       - ls -l temp/test/
       - echo Artifacts ready.....
 
 artifacts:
   files:
-    - 'temp/test/**/*'  # Match all files and directories in temp/test relative to the build root
+    - 'temp/test/**/*'
   discard-paths: no

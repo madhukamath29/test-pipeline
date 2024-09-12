@@ -2,7 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: temp/test/
-    destination: opt
+    destination: /opt  # Use absolute path
+
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
