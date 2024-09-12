@@ -34,4 +34,6 @@ phases:
 
 artifacts:
   files:
-    - 'temp1/test/**/*'
+    - '**/*'
+  base-directory: 'build_output'
+  discard-paths: yes
