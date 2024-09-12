@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt  # Use absolute path
+    destination: /opt/demo  # Use absolute path
 
 hooks:
   BeforeInstall:
