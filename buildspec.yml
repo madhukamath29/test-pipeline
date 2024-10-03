@@ -34,7 +34,7 @@ phases:
 
   post_build:
     commands:
-     - echo "Build complete, files merged..."
+     - echo "Build complete, files merged...."
 artifacts:
   files:
     - '**/*'  # Upload all merged files
