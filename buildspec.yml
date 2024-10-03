@@ -30,12 +30,11 @@ phases:
       - cp -r third-party-repo/* community-repo/
       - cp -r common-addon-repo/* community-repo/
       - cp -r gst-repo/* community-repo/
-
       - echo "Files merged into community repo..."
 
   post_build:
     commands:
-     - build successfull
+     - echo "Build complete, files merged..."
 artifacts:
   files:
     - '**/*'  # Upload all merged files
